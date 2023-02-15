@@ -1,0 +1,15 @@
+--- Password checker ---
+
+Libraries: requests, hashlib (Secure hashes and message digests), sys (System-specific parameters and functions)
+
+Description: With the help of API from https://haveibeenpwned.com/ we can check if our password was exposed in data breaches. 
+
+How it works?
+
+From terminal we need to type python checkmypass2.py (name of folder with passwords that we want to verify); Example: python checkmypass2.py passwords.txt
+
+How I build this script?
+
+I knew about this site https://haveibeenpwned.com/ from a podcast and once I check my passwords and I saw the site has also an API. In my opinion is risky 
+to check passwords direct on the site because someone on the web can receive your passwords. So to make it safer I acces the API with requests library to
+connect. After we need to hash our passwords for security reasons.
